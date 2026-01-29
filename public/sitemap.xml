@@ -1,4 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://notes.jonkinney.com/</loc>
+    <lastmod>2026-01-29T05:54:38.564Z</lastmod>
+  </url><url>
     <loc>https://notes.jonkinney.com/03-Resources/Tech-Guides/qmd-obsidian-search</loc>
     <lastmod>2026-01-29T03:41:06.200Z</lastmod>
   </url><url>
@@ -16,7 +19,4 @@
   </url><url>
     <loc>https://notes.jonkinney.com/MoltBot-Docs/setup/obsidian-publishing</loc>
     <lastmod>2026-01-29T05:38:23.757Z</lastmod>
-  </url><url>
-    <loc>https://notes.jonkinney.com/</loc>
-    <lastmod>2026-01-29T05:54:38.564Z</lastmod>
   </url></urlset>
