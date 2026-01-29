@@ -9,3 +9,8 @@
 [data-slug="index"] .backlinks {
   display: none;
 }
+
+// Hide "Home" link on the home page itself
+[data-slug="index"] .page-title {
+  display: none;
+}
