@@ -2,8 +2,9 @@
 publish: true
 title: Jonokasten
 created: 2026-01-28T23:46:26.533-06:00
-modified: 2026-01-29T01:08:36.219-06:00
+modified: 2026-01-29T01:37:59.822-06:00
 cssclasses: ""
+socialImage: og-image.png
 ---
 
 

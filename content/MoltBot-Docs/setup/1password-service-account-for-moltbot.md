@@ -228,6 +228,3 @@ Service accounts should still work via `OP_SERVICE_ACCOUNT_TOKEN`.
 - Gateway is managed by LaunchAgent: `com.clawdbot.gateway`
 - Gateway now starts via `op run --env-file ~/.clawdbot/env/gateway.env.tpl -- ...`
 
-
----
-*Part of [[index|Jonokasten]]*
