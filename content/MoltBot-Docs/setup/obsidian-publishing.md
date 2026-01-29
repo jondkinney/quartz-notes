@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-01-28T23:30:52.040-06:00
-modified: 2026-01-28T23:38:23.757-06:00
+modified: 2026-01-29T01:32:29.420-06:00
 cssclasses: ""
 ---
 
@@ -340,6 +340,156 @@ cd ~/Code/quartz && npx quartz build --serve
 
 ---
 
+## Quartz Layout & Styling Customization
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `quartz.config.ts` | Site settings, plugins, theme colors |
+| `quartz.layout.ts` | Component placement (left/right sidebars, beforeBody, afterBody) |
+| `quartz/styles/custom.scss` | Custom CSS overrides |
+
+### Conditional Rendering for Index Page
+
+Quartz uses `data-slug="index"` on the body for the homepage. Use this to hide/show elements conditionally.
+
+**In `quartz.layout.ts`** — wrap components with `ConditionalRender`:
+
+```typescript
+// Hide Backlinks on index page
+Component.ConditionalRender({
+  component: Component.Backlinks(),
+  condition: (page) => page.fileData.slug !== "index",
+}),
+
+// Also commonly hidden on index:
+Component.ConditionalRender({
+  component: Component.Breadcrumbs(),
+  condition: (page) => page.fileData.slug !== "index",
+}),
+Component.ConditionalRender({
+  component: Component.ArticleTitle(),
+  condition: (page) => page.fileData.slug !== "index",
+}),
+Component.ConditionalRender({
+  component: Component.ContentMeta(),
+  condition: (page) => page.fileData.slug !== "index",
+}),
+```
+
+**In `quartz/styles/custom.scss`** — use CSS for visual tweaks:
+
+```scss
+// Hide "Home" link on homepage (avoid recursive link)
+[data-slug="index"] .page-title {
+  display: none;
+}
+
+// Remove image margins on index
+[data-slug="index"] article img {
+  margin: 0;
+}
+
+// Hide HR separator on index (no afterBody content)
+[data-slug="index"] .center > hr {
+  display: none;
+}
+
+// Add separator above footer
+footer {
+  border-top: 1px solid var(--lightgray);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+```
+
+### Understanding the HR Separator
+
+Quartz renders an `<hr>` between content and `afterBody` components (defined in `quartz/components/renderPage.tsx`). If your layout has no `afterBody` components, you get a lonely HR. Hide it with CSS on specific pages.
+
+### Automatic Backlinks to Index
+
+A GitHub Action automatically adds backlinks to the index page on every deploy. This ensures:
+- All published notes appear in the index's Backlinks section
+- Graph View shows connections between notes and the index
+- No manual linking required
+
+**How it works:**
+
+1. Script runs during deploy: `scripts/add-backlinks.sh`
+2. Finds all markdown files in `content/` (except `index.md`)
+3. If file doesn't already link to `[[index`, appends a backlink
+4. Commits changes automatically before building
+
+**The script** (`scripts/add-backlinks.sh`):
+
+```bash
+#!/bin/bash
+# Adds backlink to index on all published markdown files that don't have one
+
+CONTENT_DIR="content"
+BACKLINK_PATTERN="\[\[index"
+BACKLINK_TEXT=$'\n---\n*Part of [[index|Jonokasten]]*'
+
+find "$CONTENT_DIR" -name "*.md" ! -name "index.md" -type f | while read -r file; do
+  if ! grep -q "$BACKLINK_PATTERN" "$file"; then
+    echo "$BACKLINK_TEXT" >> "$file"
+    echo "Added backlink to: $file"
+  fi
+done
+```
+
+**Deploy workflow addition** (`.github/workflows/deploy.yml`):
+
+```yaml
+- name: Add backlinks to index
+  run: |
+    chmod +x scripts/add-backlinks.sh
+    ./scripts/add-backlinks.sh
+- name: Commit backlink changes
+  run: |
+    git config user.name "github-actions[bot]"
+    git config user.email "github-actions[bot]@users.noreply.github.com"
+    git add -A
+    git diff --staged --quiet || git commit -m "Auto-add backlinks to index"
+    git push || true
+```
+
+**Note:** The workflow needs `contents: write` permission to push the backlink commits.
+
+### Manual Graph Connections (Alternative)
+
+For hidden links that don't render visibly, use:
+
+```markdown
+<!-- Hidden links for graph connections -->
+<div style="display:none">
+[[path/to/note|Display Name]]
+[[another/note|Another Note]]
+</div>
+```
+
+This creates backlinks and graph connections without cluttering the page.
+
+### Local Development
+
+```bash
+cd ~/Code/quartz-notes
+npx quartz build --serve
+```
+
+Site runs at http://localhost:8080 with hot reload. Changes to content, config, layout, and styles auto-rebuild.
+
+**Port conflicts:** If you see `EADDRINUSE` errors, kill stale processes:
+
+```bash
+/usr/sbin/lsof -i :3001  # Find process using websocket port
+kill <PID>               # Kill it
+```
+
+---
+
 ## Advanced Features
 
 Quartz Syncer supports:
@@ -353,7 +503,4 @@ See [plugin docs](https://saberzero1.github.io/quartz-syncer-docs/Settings/) for
 
 ---
 
-*Last updated: 2026-01-28*
-
----
-*Part of [[index|Jonokasten]]*
+*Last updated: 2026-01-29*
