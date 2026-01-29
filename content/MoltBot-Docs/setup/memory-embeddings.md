@@ -55,6 +55,3 @@ Embedding settings live in Moltbot's config. The default uses OpenAI with the AP
 ---
 
 *Last updated: 2026-01-26*
-
----
-*Part of [[index|Jonokasten]]*
