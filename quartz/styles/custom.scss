@@ -14,3 +14,15 @@
 [data-slug="index"] article img {
   margin: 0;
 }
+
+// Hide HR separator on index page (no afterBody content)
+[data-slug="index"] .center > hr {
+  display: none;
+}
+
+// Add HR above footer
+footer {
+  border-top: 1px solid var(--lightgray);
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
