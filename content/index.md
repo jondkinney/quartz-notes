@@ -20,14 +20,12 @@ A collection of technical guides, tutorials, and notes on software development, 
 - **DevOps** — macOS setup, Linux, deployment, and infrastructure
 - **Productivity** — Tools, workflows, and systems for getting things done
 
-## Guides
-
-### MoltBot Setup
-- [[MoltBot-Docs/1password-service-account-for-moltbot|1Password Service Account]]
-- [[MoltBot-Docs/launchagent|LaunchAgent Setup]]
-- [[MoltBot-Docs/agentmail-setup|AgentMail Setup]]
-- [[MoltBot-Docs/memory-embeddings|Memory Embeddings]]
-- [[MoltBot-Docs/obsidian-publishing|Obsidian Publishing]]
-
-### Tools
-- [[03-Resources/Tech-Guides/qmd-obsidian-search|QMD - Local Semantic Search]]
+<!-- Hidden links for graph connections -->
+<div style="display:none">
+[[MoltBot-Docs/1password-service-account-for-moltbot|1Password Service Account]]
+[[MoltBot-Docs/launchagent|LaunchAgent Setup]]
+[[MoltBot-Docs/agentmail-setup|AgentMail Setup]]
+[[MoltBot-Docs/memory-embeddings|Memory Embeddings]]
+[[MoltBot-Docs/obsidian-publishing|Obsidian Publishing]]
+[[03-Resources/Tech-Guides/qmd-obsidian-search|QMD - Local Semantic Search]]
+</div>
