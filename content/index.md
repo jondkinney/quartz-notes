@@ -1,10 +1,10 @@
 ---
-title: Jon's Notes
+title: Jonokasten
 ---
 
-# Welcome
+# Welcome to Jonokasten
 
-A collection of tech guides and notes from my Obsidian vault.
+A digital Zettelkasten — tech guides and knowledge from my Obsidian vault.
 
 ## Recent Notes
 
