@@ -335,6 +335,3 @@ client.inboxes.messages.send(
 
 *Last updated: 2026-01-28*
 *Setup time: ~30 minutes (once you know the gotchas)*
-
----
-*Part of [[index|Jonokasten]]*

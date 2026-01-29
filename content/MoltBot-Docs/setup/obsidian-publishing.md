@@ -354,6 +354,3 @@ See [plugin docs](https://saberzero1.github.io/quartz-syncer-docs/Settings/) for
 ---
 
 *Last updated: 2026-01-28*
-
----
-*Part of [[index|Jonokasten]]*
