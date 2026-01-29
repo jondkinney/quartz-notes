@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Home</title>
+      <link>https://notes.jonkinney.com</link>
+      <description>Last 10 notes on Home</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Jonokasten</title>
+    <link>https://notes.jonkinney.com/</link>
+    <guid>https://notes.jonkinney.com/</guid>
+    <description><![CDATA[  Tech Guides &amp; Knowledge Base A collection of technical guides, tutorials, and notes on software development, AI tools, and productivity systems. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:54:38 GMT</pubDate>
+  </item><item>
+    <title>obsidian-publishing</title>
+    <link>https://notes.jonkinney.com/MoltBot-Docs/setup/obsidian-publishing</link>
+    <guid>https://notes.jonkinney.com/MoltBot-Docs/setup/obsidian-publishing</guid>
+    <description><![CDATA[ Obsidian → Quartz Publishing Setup Publish Obsidian notes to a static website using Quartz Syncer and GitHub Pages. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:38:23 GMT</pubDate>
+  </item><item>
+    <title>memory-embeddings</title>
+    <link>https://notes.jonkinney.com/MoltBot-Docs/setup/memory-embeddings</link>
+    <guid>https://notes.jonkinney.com/MoltBot-Docs/setup/memory-embeddings</guid>
+    <description><![CDATA[ Memory Embeddings How Moltbot remembers things across sessions. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:36:29 GMT</pubDate>
+  </item><item>
+    <title>agentmail-setup</title>
+    <link>https://notes.jonkinney.com/MoltBot-Docs/setup/agentmail-setup</link>
+    <guid>https://notes.jonkinney.com/MoltBot-Docs/setup/agentmail-setup</guid>
+    <description><![CDATA[ AgentMail Integration with Moltbot Purpose: Give your agent a dedicated email address that forwards to your chat (Telegram, Discord, etc.) Overview Flow: Email sent to agent@agentmail.to ↓ AgentMail receives it ↓ Webhook fires to your Moltbot instance (via Tailscale Funnel) ↓ Transform filters by al... ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:28:04 GMT</pubDate>
+  </item><item>
+    <title>launchagent</title>
+    <link>https://notes.jonkinney.com/MoltBot-Docs/setup/launchagent</link>
+    <guid>https://notes.jonkinney.com/MoltBot-Docs/setup/launchagent</guid>
+    <description><![CDATA[ LaunchAgent Configuration Moltbot runs as a macOS LaunchAgent, which means it starts automatically on login and stays running. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:28:04 GMT</pubDate>
+  </item><item>
+    <title>1password-service-account-for-moltbot</title>
+    <link>https://notes.jonkinney.com/MoltBot-Docs/setup/1password-service-account-for-moltbot</link>
+    <guid>https://notes.jonkinney.com/MoltBot-Docs/setup/1password-service-account-for-moltbot</guid>
+    <description><![CDATA[ 1Password setup for Moltbot (Service Account + scoped vault) This document describes how we configured Moltbot to pull an OpenAI API key from 1Password without storing the key in Moltbot config and without granting Moltbot access to your full 1Password account. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 05:28:04 GMT</pubDate>
+  </item><item>
+    <title>qmd-obsidian-search</title>
+    <link>https://notes.jonkinney.com/03-Resources/Tech-Guides/qmd-obsidian-search</link>
+    <guid>https://notes.jonkinney.com/03-Resources/Tech-Guides/qmd-obsidian-search</guid>
+    <description><![CDATA[ QMD - Local Semantic Search for Obsidian QMD (Quick Markdown) is a local search engine that indexes your Obsidian vault and provides both keyword (BM25) and semantic (vector) search. ]]></description>
+    <pubDate>Thu, 29 Jan 2026 03:41:06 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
