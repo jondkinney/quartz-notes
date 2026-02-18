@@ -4,7 +4,7 @@ title: Jonokasten
 socialImage: og-image.png
 ---
 
-![Jonokasten](assets/jonokasten-banner.png)
+![Jonokasten](Assets/jonokasten-banner.png)
 # Tech Guides & Knowledge Base
 
 A collection of technical guides, tutorials, and notes on software development, AI tools, and productivity systems.
