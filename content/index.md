@@ -1,8 +1,12 @@
 ---
 publish: true
 title: Jonokasten
+created: 2026-04-16T17:46:40.599-05:00
+modified: 2026-04-16T17:46:40.600-05:00
+cssclasses: ""
 socialImage: og-image.png
 ---
+
 
 ![Jonokasten](Assets/jonokasten-banner.png)
 # Tech Guides & Knowledge Base

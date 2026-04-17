@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-02-07T16:33:28.875-06:00
+modified: 2026-02-07T16:33:28.875-06:00
+cssclasses: ""
 ---
+
 # LaunchAgent Configuration
 
 OpenClaw runs as a macOS LaunchAgent, which means it starts automatically on login and stays running.
@@ -122,6 +126,3 @@ Or use: `clawdbot gateway restart`
 ---
 
 *Last updated: 2026-02-01*
-
----
-*Part of [[index|Jonokasten]]*

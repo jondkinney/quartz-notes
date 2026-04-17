@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-01-28T23:30:52.040-06:00
+modified: 2026-01-29T01:32:29.420-06:00
+cssclasses: ""
 ---
+
 # Obsidian → Quartz Publishing Setup
 
 Publish Obsidian notes to a static website using [Quartz Syncer](https://github.com/saberzero1/quartz-syncer) and GitHub Pages.

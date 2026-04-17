@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-02-07T16:33:35.231-06:00
+modified: 2026-02-07T16:33:35.231-06:00
+cssclasses: ""
 ---
+
 # AgentMail Integration with OpenClaw
 
 > **Purpose:** Give your agent a dedicated email address that forwards to your chat (Telegram, Discord, etc.)
@@ -331,6 +335,3 @@ client.inboxes.messages.send(
 
 *Last updated: 2026-01-28*
 *Setup time: ~30 minutes (once you know the gotchas)*
-
----
-*Part of [[index|Jonokasten]]*

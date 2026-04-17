@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-01-30T17:38:48.106-06:00
+modified: 2026-01-30T17:42:14.059-06:00
+cssclasses: ""
 ---
+
 Obsidian commands that can work for .vimrc plugin located in ~/Obsidian/.obsidian.vimrc
 
 ```
@@ -288,5 +292,3 @@ obsidian-excalidraw-plugin:toggle-excalidraw-view
 obsidian-excalidraw-plugin:convert-to-excalidraw
 obsidian-excalidraw-plugin:convert-excalidraw
 ```
----
-*Part of [[index|Jonokasten]]*

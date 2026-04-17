@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-01-28T23:28:04.212-06:00
+modified: 2026-02-07T16:30:02.258-06:00
+cssclasses: ""
 ---
+
 # 1Password Service Account Setup for OpenClaw
 
 How to securely manage API keys for OpenClaw using a scoped 1Password Service Account. No secrets stored in config files — keys are pulled from 1Password at startup and injected into the OpenClaw config automatically.
@@ -314,6 +318,3 @@ Check the inject-secrets log. If it says "no patch needed," the diff check may b
 ---
 
 *Last updated: 2026-02-07*
-
----
-*Part of [[index|Jonokasten]]*

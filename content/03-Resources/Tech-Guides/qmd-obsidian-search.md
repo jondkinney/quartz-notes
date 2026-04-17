@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-01-27T16:54:53.999-06:00
+modified: 2026-01-28T21:41:06.200-06:00
+cssclasses: ""
 ---
+
 
 # QMD - Local Semantic Search for Obsidian
 
@@ -141,6 +145,3 @@ qmd status
 ---
 
 *Set up January 2026 by Del*
-
----
-*Part of [[index|Jonokasten]]*

@@ -1,6 +1,10 @@
 ---
 publish: true
+created: 2026-02-07T16:33:35.231-06:00
+modified: 2026-02-07T16:33:35.232-06:00
+cssclasses: ""
 ---
+
 # Memory Embeddings
 
 How OpenClaw remembers things across sessions.
@@ -51,6 +55,3 @@ Embedding settings live in OpenClaw's config. The default uses OpenAI with the A
 ---
 
 *Last updated: 2026-01-26*
-
----
-*Part of [[index|Jonokasten]]*
