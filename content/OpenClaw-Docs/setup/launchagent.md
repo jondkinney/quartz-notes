@@ -126,3 +126,6 @@ Or use: `clawdbot gateway restart`
 ---
 
 *Last updated: 2026-02-01*
+
+---
+*Part of [[index|Jonokasten]]*

@@ -318,3 +318,6 @@ Check the inject-secrets log. If it says "no patch needed," the diff check may b
 ---
 
 *Last updated: 2026-02-07*
+
+---
+*Part of [[index|Jonokasten]]*

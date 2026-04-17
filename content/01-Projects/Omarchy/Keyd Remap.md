@@ -41,3 +41,6 @@ capslock = overloadt(control, esc, 150)
 ```bash
 sudo keyd reload
 ```
+
+---
+*Part of [[index|Jonokasten]]*

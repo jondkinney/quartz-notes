@@ -292,3 +292,5 @@ obsidian-excalidraw-plugin:toggle-excalidraw-view
 obsidian-excalidraw-plugin:convert-to-excalidraw
 obsidian-excalidraw-plugin:convert-excalidraw
 ```
+---
+*Part of [[index|Jonokasten]]*

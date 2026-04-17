@@ -145,3 +145,6 @@ qmd status
 ---
 
 *Set up January 2026 by Del*
+
+---
+*Part of [[index|Jonokasten]]*

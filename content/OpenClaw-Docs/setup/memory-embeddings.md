@@ -55,3 +55,6 @@ Embedding settings live in OpenClaw's config. The default uses OpenAI with the A
 ---
 
 *Last updated: 2026-01-26*
+
+---
+*Part of [[index|Jonokasten]]*
